@@ -1,0 +1,85 @@
+#home-page{
+    .featured-properties-section{
+        padding-top: 110px;
+        background-color: black;
+        .featured{
+            .header-featured{
+                .star-container{
+                    margin-bottom: 10px;
+                }
+                .content-header{
+                    margin-bottom: 80px;
+                    .left{
+                        width: 1200px;
+                        h1{
+                            color: var(--Absolute-White, #FFF);
+                            font-size: 48px;
+                            font-weight: 600;
+                            line-height: 150%; /* 72px */
+                            margin-bottom: 14px;
+                        }
+                    }
+                    .right{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                                color: var(--Grey-60, #999);
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 150%; /* 27px */
+                                width: 1200px;
+                        }
+                    }
+                }
+            }
+            .featured-cards{
+                .card1{
+                    padding: 40px;
+                    border-radius: 12px;
+                    border: 1px solid var(--Grey-15, #262626);
+                    background: var(--Grey-08, #141414);
+                    width: 512px;
+                    .header-card{
+                        margin-bottom: 30px;
+                    }
+                    .body-card{
+                        h5{
+                            color: var(--Absolute-White, #FFF);
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 150%; /* 36px */
+                            margin-bottom: 6px;
+                        }
+                        span{
+                            color: var(--Grey-60, #999);
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 150%;
+                            a{
+                                color: var(--Absolute-White, #FFF);
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 150%;
+                                text-decoration-line: underline;
+                            }
+                        }
+                        .details{
+                            margin-top: 30px;
+                            .bedroom{
+                                padding: 8px 14px;
+                                // @include flexbox;
+                                // column-gap: 4px;
+                                h6{
+                                    color: var(--Absolute-White, #FFF);
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    line-height: 150%; /* 27px */
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

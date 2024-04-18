@@ -1,0 +1,82 @@
+#home-page{
+    .navbar-container{
+        background: var(--Grey-10, #1A1A1A);
+        .navbar{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @include flexbox;
+            justify-content: space-between;
+            @media screen and (max-width:1650px) {
+                padding: 14px 0;
+            }
+            @media screen and (max-width:1385px) {
+                padding: 20px 0;
+            }
+            .left{
+                @include flexbox;
+                column-gap: 10.23px;
+                @media screen and (max-width:1650px) {
+                    column-gap: 7.25px;
+                } 
+                img.picture-logo{
+                    @media screen and (max-width:1650px) {
+                        width: 34px;
+                        height: 34px;
+                    } 
+                    @media screen and (max-width:1385px) {
+                        width: 34px;
+                        height: 34px;
+                    } 
+                }
+                img.text-logo{
+                    @media screen and (max-width:1650px) {
+                        width: 72.084px;
+                        height: 14.537px;
+                    } 
+                    @media screen and (max-width:1385px) {
+                        width: 72.084px;
+                        height: 14.537px;
+                    } 
+                }
+            }
+            .middle{
+                ul{
+                    @include flexbox;
+                    column-gap: 30px;
+                    @media screen and (max-width:1650px) {
+                        column-gap: 24px;
+                    } 
+                    @media screen and (max-width:1385px) {
+                        display: none;
+                    } 
+                    li{
+                        transition: .2s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                        &:nth-child(1){
+                            border-radius: 10px;
+                            border: 1px solid var(--Grey-15, #262626);
+                            background: var(--Grey-08, #141414);
+                            padding: 14px 24px;
+                            @media screen and (max-width:1650px) {
+                                padding: 12px 24px;
+                            } 
+                        }
+                        a{
+                            text-decoration: none;
+                            color: var(--Absolute-White, #FFF);
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 150%; /* 27px */
+                            @media screen and (max-width:1650px) {
+                                font-size: 14px;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
