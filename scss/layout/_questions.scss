@@ -1,0 +1,192 @@
+.questions-section{
+    background-color: black;
+    padding-bottom: 96px;
+    .questions{
+        .star-container3{
+            padding-bottom: 10px;
+            padding-top: 15px;
+            @media screen and (max-width:1650px) {
+                padding-bottom: 6px;
+            }
+        }
+        .header-questions{
+            .top{
+                h1{
+                    color: var(--Absolute-White, #FFF);
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 150%; /* 72px */
+                    margin-bottom: 14px;
+                    @media screen and (max-width:1650px) {
+                        font-size: 38px;
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (max-width:1385px) {
+                        font-size: 28px;
+                        margin-bottom: 6px;
+                      }
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 80px;
+                @media screen and (max-width:1650px) {
+                    padding-bottom: 60px;
+                }
+                @media screen and (max-width:1385px) {
+                    padding-bottom: 40px;
+                }
+                p{
+                    color: var(--Grey-60, #999);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    width: 1236px;
+                    @media screen and (max-width:1650px) {
+                        width: 1003px;
+                        font-size: 16px;
+                      }
+                      @media screen and (max-width:1385px) {
+                        font-size: 14px;
+                      }
+                }
+            }
+        }
+        .question-cards{
+            display: flex;
+            column-gap: 30px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid var(--Grey-15, #262626);
+            @media screen and (max-width:1650px) {
+                column-gap: 20px;
+                padding-bottom: 40px;
+              }
+              @media screen and (max-width:1385px) {
+                padding-bottom: 30px;
+            }
+            .card1{
+                padding: 50px;
+                width: 512px;
+                border-radius: 12px;
+                border: 1px solid var(--Grey-15, #262626);
+                background: var(--Grey-08, #141414);
+                @media screen and (max-width:1650px) {
+                    padding: 40px;
+                    width: 413px;
+                  }
+                  @media screen and (max-width:1385px) {
+                    padding: 30px;
+                }
+                h6{
+                    color: var(--Absolute-White, #FFF);
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 150%; /* 36px */
+                    margin-bottom: 30px;
+                    @media screen and (max-width:1650px) {
+                        font-size: 20px;
+                        margin-bottom: 24px;
+                      }
+                      @media screen and (max-width:1385px) {
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                    }
+                }
+                p{
+                    color: var(--Grey-60, #999);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    letter-spacing: -0.108px;
+                    margin-bottom: 30px;
+                    @media screen and (max-width:1650px) {
+                        font-size: 16px;
+                        margin-bottom: 24px;
+                      }
+                      @media screen and (max-width:1385px) {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .card2{
+                @media screen and (max-width:1385px) {
+                    display: none;
+                  }
+            }
+            .card3{
+                @media screen and (max-width:1385px) {
+                    display: none;
+                }
+            }
+        }
+        .turn-pages{
+            margin-top: 20px;
+            @include flexbox;
+            justify-content: space-between;
+            @media screen and (max-width:1650px) {
+                margin-top: 16px;
+            }
+            .left{
+                .properties-btn{
+                    padding: 14px 20px;
+                    color: var(--Absolute-White, #FFF);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    border-radius: 10px;
+                    background: var(--Grey-10, #1A1A1A);
+                    border: none;
+                    display: none;
+                    @media screen and (max-width:1385px) {
+                        display: initial;
+                     }
+                }
+                p{
+                    color: var(--Grey-60, #999);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    @media screen and (max-width:1650px) {
+                        font-size: 16px;
+                    }
+                    @media screen and (max-width:1385px) {
+                        display: none;
+                    }
+                }
+            }
+            .right{
+                .turning{
+                    color: var(--Grey-60, #999);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    display: none;
+                    @media screen and (max-width:1385px) {
+                        display: initial;
+                    }
+                }
+                @include flexbox;
+                    column-gap: 10px;
+                .arrow-left{
+                    padding: 14px;
+                    border-radius: 50%;
+                    border: 1px solid var(--Grey-15, #262626);
+                    @media screen and (max-width:1650px) {
+                        padding: 10px;
+                    }
+                }
+                .arrow-right{
+                    transform: rotate(180deg);
+                    padding: 14px;
+                    border-radius: 50%;
+                    border: 1px solid var(--Grey-15, #262626);
+                    @media screen and (max-width:1650px) {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

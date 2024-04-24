@@ -1,5 +1,4 @@
-#home-page{    
-    .contact-btn{
+.contact-btn{
         padding: 16px 24px;
         color: var(--Absolute-White, #FFF);
         font-size: 18px;
@@ -99,10 +98,169 @@
                             border-radius: 10px;
                             background: var(--Grey-10, #1A1A1A);
                             border: none;
+                            @media screen and (max-width:1650px) {
+                                padding: 14px 20px;
+                                font-size: 14px;
+                            }
+                            @media screen and (max-width:1385px) {
+                                display: none;
+                             }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .client-say-section{
+        .clients{
+            .header-clients{
+                .bottom{
+                    .testimonials-btn{
+                        padding: 18px 24px;
+                        color: var(--Absolute-White, #FFF);
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        border-radius: 10px;
+                        border: 1px solid var(--Grey-15, #262626);
+                        background: var(--Grey-10, #1A1A1A);
+                        @media screen and (max-width:1650px) {
+                           padding: 14px 20px;
+                           font-size: 14px;
+                           transform: translateY(-18px);
+                        }
+                        @media screen and (max-width:1385px) {
+                           display: none;
                         }
                     }
                 }
             }
         }
     }
-}
+    .questions-section{
+        .questions{
+            .header-questions{
+                .bottom{
+                    .faq-btn{
+                        color: var(--Absolute-White, #FFF);
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        border-radius: 10px;
+                        border: 1px solid var(--Grey-15, #262626);
+                        background: var(--Grey-10, #1A1A1A);
+                        border: none;
+                        padding: 18px 24px;
+                        transform: translateY(-10px);
+                        @media screen and (max-width:1650px) {
+                            font-size: 14px;
+                            padding: 14px 20px;
+                          }
+                        @media screen and (max-width:1385px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .question-cards{
+                .card1{
+                    .read-more-btn{
+                        color: var(--Absolute-White, #FFF);
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 131%; /* 23.58px */
+                        letter-spacing: -0.108px;
+                        padding: 18px 24px;
+                        border: none;
+                        border-radius: 10px;
+                        border: 1px solid var(--Grey-15, #262626);
+                        background: var(--Grey-10, #1A1A1A);
+                        @media screen and (max-width:1650px) {
+                            font-size: 14px;
+                            padding: 14px 20px;
+                          }
+                          @media screen and (max-width:1385px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .journey-section{
+        .journey{
+            .right{
+                .explore-btn{
+                    color: var(--Absolute-White, #FFF);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    padding: 18px 24px;
+                    border-radius: 10px;
+                    background: var(--Purple-60, #703BF7);
+                    border: none;
+                    @media screen and (max-width:1650px) {
+                        padding: 14px 20px;
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:1385px) {
+                        width: 358px;
+                    }
+                }
+            }
+        }
+    }
+    #properties-page{
+        .property-inputs{
+            .inputs{
+                .input1{
+                    .property-btn{
+                        @include flexbox;
+                        column-gap: 8px;
+                        padding: 18px 24px;
+                        color: var(--Absolute-White, #FFF);
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 150%; /* 27px */
+                        border-radius: 10px;
+                        background: var(--Purple-60, #703BF7);
+                        border: none;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .find-property-section{
+            .property{
+                .search-btn{
+                    @include flexbox;
+                    column-gap: 8px;
+                    padding: 18px 24px;
+                    border-radius: 10px;
+                    background: var(--Purple-60, #703BF7);
+                    border: none;
+                    color: var(--Absolute-White, #FFF);
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    p{
+                        @media screen and (max-width:1385px) {
+                            display: none;
+                        }
+                    }
+                    img{
+                        @media screen and (max-width:1650px) {
+                            width: 20px;
+                        height: 20px;
+                        }
+                    }
+                    @media screen and (max-width:1650px) {
+                        padding: 14px 20px;
+                        font-size: 12px;
+                        column-gap: 6px;
+                    }
+                }
+            }
+        }
+    }

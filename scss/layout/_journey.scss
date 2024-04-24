@@ -1,0 +1,51 @@
+ .journey-section{
+        background-color: black;
+        padding: 100px 0;
+        @media screen and (max-width:1650px) {
+            padding: 60px 0;
+        }
+        @media screen and (max-width:1385px) {
+            padding: 50px 0;
+        }
+        .journey{
+            @include flexbox;
+            justify-content: space-between;
+            @media screen and (max-width:1385px) {
+                flex-direction: column;
+            }
+            .left{
+                h1{
+                    color: var(--Absolute-White, #FFF);
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 150%; /* 72px */
+                    margin-bottom: 14px;
+                    @media screen and (max-width:1650px) {
+                        font-size: 38px;
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (max-width:1385px) {
+                        width: 100%;
+                       font-size: 28px;
+                       margin-bottom: 6px;
+                    }
+                }
+                p{
+                    color: var(--Grey-60, #999);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 150%; /* 27px */
+                    width: 1154px;
+                    @media screen and (max-width:1650px) {
+                        font-size: 16px;
+                        width: 979px;
+                    }
+                    @media screen and (max-width:1385px) {
+                        width: 100%;
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
